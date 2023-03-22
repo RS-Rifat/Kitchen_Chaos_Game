@@ -116,6 +116,16 @@ PrefabInstance:
       propertyPath: cuttingCounter
       value: 
       objectReference: {fileID: 5696316042266592008}
+    - target: {fileID: 154008100394734996, guid: e1a795e575ebf2442bab2a32ae818caf,
+        type: 3}
+      propertyPath: hasProgressGameObject
+      value: 
+      objectReference: {fileID: 3657931641081631253}
+    - target: {fileID: 836906139982038072, guid: e1a795e575ebf2442bab2a32ae818caf,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4759351350361558154, guid: e1a795e575ebf2442bab2a32ae818caf,
         type: 3}
       propertyPath: m_Name
