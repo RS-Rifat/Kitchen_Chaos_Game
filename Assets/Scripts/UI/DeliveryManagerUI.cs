@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeliveryManagerUI : MonoBehaviour
 {
@@ -16,11 +17,13 @@ public class DeliveryManagerUI : MonoBehaviour
 
     private void Start()
     {
+        
         DeliveryManager.Instance.OnRecipeSpawned += DeliveryManager_OnRecipeSpawned;
         DeliveryManager.Instance.OnRecipeCompleted += DeliveryManager_OnRecipeCompleted;
 
         UpdateVisual();
     }
+
 
     private void DeliveryManager_OnRecipeCompleted(object sender, EventArgs e)
     {
