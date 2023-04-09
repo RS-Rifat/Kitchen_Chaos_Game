@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
 public class DeliveryManagerUI : MonoBehaviour
 {
@@ -46,7 +46,7 @@ public class DeliveryManagerUI : MonoBehaviour
         foreach (RecipeSO recipeSO in DeliveryManager.Instance.GetWaitingRecipeSOList())
         {
             Transform recipeTreansfrom = Instantiate(recipeTemplate, container);
-            recipeTemplate.gameObject.SetActive(true);
+            recipeTreansfrom.gameObject.SetActive(true);
 
             recipeTreansfrom.GetComponent<DeliveryManagerSingleUI>().SetRecipeSO(recipeSO);
         }
