@@ -14,6 +14,7 @@ public class GameInput : MonoBehaviour
     public event EventHandler OnInteractAction;
     public event EventHandler OnInteractAlernateAction;
     public event EventHandler OnPauseAction;
+    public event EventHandler OnBinderRebind;
 
     public enum Binding
     {
@@ -151,6 +152,8 @@ public class GameInput : MonoBehaviour
 
                 PlayerPrefs.SetString(PLAYER_PREFS_BINDING, playerInputActions.SaveBindingOverridesAsJson());
                 PlayerPrefs.Save();
+
+                OnBinderRebind?.Invoke(this, EventArgs.Empty);
             })
             .Start();
     }
